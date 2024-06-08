@@ -116,4 +116,36 @@ footer{
 footer span{
     text-decoration: underline; text-decoration-style:dotted;
 
+    
+}
+.dropdown-content{
+    position: absolute;
+    background: white;
+    margin-top:28px;
+    color:black;
+    min-width:160px;
+    border-top:2px soild #6ab43e;
+    box-shadow:0px 8px 16px 0px rgba(0,0,0,0,2);
+    z-index: 1;
+    overflow: hidden;
+    transition: all 0.5s;
+    max-height:0;
+    visibility: hidden;
+    opacity:0;
+}
+
+.dropdown-content-show {
+    max-height:400px;
+    visibility: visible;
+    opacity: 1;
+}
+.dropdown-content a{
+    color:black !important;
+    padding: 12px 140px 12px 20px ! important;
+    text-decoration:none;
+    display: block;
+    border-bottom: 1px solid rgba(0,0,0,0,2);
+}
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
 }

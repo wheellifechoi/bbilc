@@ -39,17 +39,42 @@
                 </p>
             </div>
             <ul>
-                <li>
-                    <a href="#">단체소개 <i class="fa-solid fa-angle-down"></i></a> 
+                <li class="dropdown">
+                    <a href="#">단체소개<i class="fa-solid fa-angle-down"></i></a> 
+                    <div class="dropdown-content">
+                        <a href="#">단체소개</a>
+                        <a href="#">연혁</a>
+                        <a href="#">조직도</a>
+                        <a href="#">오시는길</a>
+                    </div>
+                        
                 </li>
-                <li>
+                <li class="dropdown">
                     <a href="#">사업소개 <i class="fa-solid fa-angle-down"></i></a> 
+                    <div class="dropdown-content">
+                        <a href="#">주요사업</a>
+                        <a href="#">기타사업</a>
+                        <a href="#">공익활동</a>
+                    </div>
+                        
+                        
                 </li>
             
-            <li> <a href="#">커뮤니티 <i class="fa-solid fa-angle-down"></i></a>
+            <li class="dropdown">
+                 <a href="#">후원하기 <i class="fa-solid fa-angle-down"></i></a>
+                 <div class="dropdown-content">
+                        <a href="#">후원안내</a>
+                        <a href="#">기부금내역</a>
+                        <a href="#">자원봉사</a>
+                 </div>
+                        
             </li>
-            <li>
-                <a href="#">후원하기 <i class="fa-solid fa-angle-down"></i></a>
+            <li class="dropdown">
+                <a href="#">커뮤니티 <i class="fa-solid fa-angle-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="#">공지사항</a>
+                    <a href="#">갤러리</a>
+             </div>
             </li>
 
             <li> <a href="#">회원가입</a></li>
@@ -86,4 +111,19 @@
     <p>Copyright ©2024 복사골장애인자립생활지원센터 . All rights reserved. Powered by WordPress & Designed by Bizberg Themes</p>
 </footer>
 </body>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+            const dropdowns = document.querySelectorAll('.dropdown');
+            dropdowns.forEach(dropdown => {
+            const dropdownContent = dropdown.querySelector('.dropdown-content');
+        
+                dropdown.addEventListener('mouseenter', function() {
+                    dropdownContent.classList.add('dropdown-content-show');
+                });
+                dropdown.addEventListener('mouseleave', function() {
+                    dropdownContent.classList.remove('dropdown-content-show');
+                });
+            });
+        });
+</script>
 </html>
