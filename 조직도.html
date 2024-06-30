@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>단체소개</title>
+    <title>후원안내</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./단체소개.css">
-    
+    <link rel="stylesheet" href="./조직도.css">
+
 </head>
 <body>
     <nav>
@@ -42,9 +42,9 @@
                     <a href="./단체소개.html">단체소개 <i class="fa-solid fa-angle-down"></i></a> 
                     <div class="dropdown-content">
                             <a href="./단체소개.html">단체소개</a>
-                            <a href="./연혁.html">연혁</a>
-                            <a href="./조직도.html">조직도</a>
-                            <a href="./오시는길.html">오시는 길</a>
+                            <a href="#">연혁</a>
+                            <a href="#">조직도</a>
+                            <a href="#">오시는 길</a>
                     </div>
                 </li>
                 <li class="dropdown">
@@ -82,32 +82,30 @@
     <div class="top-background">
 
     </div>
-
-
-    <div class="background">
-        <div class="main-content">
-            <p>저희 복사골장애인자립생활지원센터는</p>
-
-            <p>장애영역에 상관없이 모든 장애인들이 지역사회에서 비장애인과 더불어 행복한삶을 영위할 수 있도록 자립생활지원서비스와 스스로의 권리를 찾기 위한 권익옹호, 동료상담, 정보제공, 자립생활기술훈련, 문화여가활동, 주거개선, 자조모임 등 각종 복지서비스를 제공함으로써 장애인의 평등한 삶과 사회참여를 위해 열심히 노력하고 있습니다. </p>
-            <p>장애인의 자립생활은 복지가 아니라 시민으로서 누려야할 당연한 권리임을  장애당사자와 지역주민이 함께 공유하며 이를 조성하기 위해 최선을 다하겠습니다. 자립을 희망하는 모든 장애인들에게 자립생활을 결심하고 실천하는 과정에서 자립이라는 목표를 향해 나아가는 길에 복사골장애인자립생활지원센터가 함께 동행하고자 합니다.</p>
-        </div>
-    </div>
-
-
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-                const dropdowns = document.querySelectorAll('.dropdown');
-                dropdowns.forEach(dropdown => {
-                const dropdownContent = dropdown.querySelector('.dropdown-content');
-            
-                    dropdown.addEventListener('mouseenter', function() {
-                        dropdownContent.classList.add('dropdown-content-show');
-                    });
-                    dropdown.addEventListener('mouseleave', function() {
-                        dropdownContent.classList.remove('dropdown-content-show');
-                    });
+    <div class="back-space"></div>
+    <div class="main-content">
+        <h1>후원안내</h1>
+        <hr>
+    <div class="content">
+        <img src="./donation.png" />
+    </div>    
+    
+</div>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+            const dropdowns = document.querySelectorAll('.dropdown');
+            dropdowns.forEach(dropdown => {
+            const dropdownContent = dropdown.querySelector('.dropdown-content');
+        
+                dropdown.addEventListener('mouseenter', function() {
+                    dropdownContent.classList.add('dropdown-content-show');
+                });
+                dropdown.addEventListener('mouseleave', function() {
+                    dropdownContent.classList.remove('dropdown-content-show');
                 });
             });
-    </script>
+        });
+</script>
 </body>
+
 </html>
