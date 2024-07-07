@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>단체소개</title>
+    <title>기타사업</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./조직도.css">
-
+    <link rel="stylesheet" href="./기타사업.css">
+    
 </head>
 <body>
     <nav>
@@ -42,17 +42,17 @@
                     <a href="./단체소개.html">단체소개 <i class="fa-solid fa-angle-down"></i></a> 
                     <div class="dropdown-content">
                             <a href="./단체소개.html">단체소개</a>
-                            <a href="#">연혁</a>
-                            <a href="#">조직도</a>
-                            <a href="#">오시는 길</a>
+                            <a href="./연혁.html">연혁</a>
+                            <a href="./조직도.html">조직도</a>
+                            <a href="./오시는길.html">오시는 길</a>
                     </div>
                 </li>
                 <li class="dropdown">
-                    <a href="#">사업소개 <i class="fa-solid fa-angle-down"></i></a> 
+                    <a href="./사업소개.html">사업소개 <i class="fa-solid fa-angle-down"></i></a> 
                     <div class="dropdown-content">
-                        <a href="#">주요사업</a>
-                        <a href="#">기타사업</a>
-                        <a href="#">공익활동</a>
+                        <a href="./주요사업.html">주요사업</a>
+                        <a href=".r/기타사업">기타사업</a>
+                        <a href="./공익활동">공익활동</a>
                     </div>
                 </li>
             
@@ -82,30 +82,42 @@
     <div class="top-background">
 
     </div>
-    <div class="back-space"></div>
-    <div class="main-content">
-        <h1>조직도</h1>
-        <hr>
-    <div class="content">
-        <img src="./organization.png" />
-    </div>    
-    
-</div>
-<script>
-    document.addEventListener("DOMContentLoaded", function() {
-            const dropdowns = document.querySelectorAll('.dropdown');
-            dropdowns.forEach(dropdown => {
-            const dropdownContent = dropdown.querySelector('.dropdown-content');
-        
-                dropdown.addEventListener('mouseenter', function() {
-                    dropdownContent.classList.add('dropdown-content-show');
-                });
-                dropdown.addEventListener('mouseleave', function() {
-                    dropdownContent.classList.remove('dropdown-content-show');
+
+
+    <div class="background">
+        <div class="main-content">
+           <h1>기타사업</h1>
+           <p style="font-size: 24px;"><strong>문화나눔</strong></p>
+            <hr>
+           <p class="introduction-margin">
+            장애인 문화나눔 모임은 장애인이 비장애인과 함께 교류하면서 동등하게 문화생활을 영위할 수 있도록 지원합니다. 장애인 문화나눔을 통해 장애인이 문화생활을 하면서 사회생활을 경험할 수 있고 자존감을 향상시킬 수 있습니다. 또한 장애인이 역량 강화, 자립생활 등을 통해 지역사회에 통합되어 삶의 질을 향상시키는데 문화생활이 핵심 요소로서 유의미한 역할을 할 수 있도록 하는 게 주된 목적입니다.
+        </p>
+                
+
+        <p style="font-size: 24px;"><strong>보치아</strong></p>
+          <hr>
+        <p class="introduction-margin">
+            중증장애인만 참여할 수 있는 스포츠인 보치아는 흰 색 표적구를 먼저 던진 후 각각 청색과 적색 공을 소유하고 있는 양 팀 선수들이 표적구에 최대한 가까이 공을 던져 승부를 겨루는 종목입니다.
+        </p> 
+
+        </div>
+    </div>
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+                const dropdowns = document.querySelectorAll('.dropdown');
+                dropdowns.forEach(dropdown => {
+                const dropdownContent = dropdown.querySelector('.dropdown-content');
+            
+                    dropdown.addEventListener('mouseenter', function() {
+                        dropdownContent.classList.add('dropdown-content-show');
+                    });
+                    dropdown.addEventListener('mouseleave', function() {
+                        dropdownContent.classList.remove('dropdown-content-show');
+                    });
                 });
             });
-        });
-</script>
+    </script>
 </body>
-
 </html>

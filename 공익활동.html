@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>단체소개</title>
+    <title>공익활동</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./조직도.css">
-
+    <link rel="stylesheet" href="./공익활동.css">
+    
 </head>
 <body>
     <nav>
@@ -42,23 +42,23 @@
                     <a href="./단체소개.html">단체소개 <i class="fa-solid fa-angle-down"></i></a> 
                     <div class="dropdown-content">
                             <a href="./단체소개.html">단체소개</a>
-                            <a href="#">연혁</a>
-                            <a href="#">조직도</a>
-                            <a href="#">오시는 길</a>
+                            <a href="./연혁.html">연혁</a>
+                            <a href="./조직도.html">조직도</a>
+                            <a href="./오시는길.html">오시는 길</a>
                     </div>
                 </li>
                 <li class="dropdown">
-                    <a href="#">사업소개 <i class="fa-solid fa-angle-down"></i></a> 
+                    <a href="./사업소개.html">사업소개 <i class="fa-solid fa-angle-down"></i></a> 
                     <div class="dropdown-content">
-                        <a href="#">주요사업</a>
-                        <a href="#">기타사업</a>
-                        <a href="#">공익활동</a>
+                        <a href="./주요사업.html">주요사업</a>
+                        <a href="./기타사업.html">기타사업</a>
+                        <a href="./공익활동">공익활동</a>
                     </div>
                 </li>
             
            
             <li class="dropdown">
-                <a href="#">후원하기 <i class="fa-solid fa-angle-down"></i></a>
+                <a href="./후원하기.html">후원하기 <i class="fa-solid fa-angle-down"></i></a>
                 <div class="dropdown-content">
                     <a href="#">후원안내</a>
                     <a href="#">기부금내역</a>
@@ -82,30 +82,36 @@
     <div class="top-background">
 
     </div>
-    <div class="back-space"></div>
-    <div class="main-content">
-        <h1>조직도</h1>
-        <hr>
-    <div class="content">
-        <img src="./organization.png" />
-    </div>    
-    
-</div>
-<script>
-    document.addEventListener("DOMContentLoaded", function() {
-            const dropdowns = document.querySelectorAll('.dropdown');
-            dropdowns.forEach(dropdown => {
-            const dropdownContent = dropdown.querySelector('.dropdown-content');
+
+
+    <div class="background">
+        <div class="main-content">
+           <h1>공익활동</h1>
+           <p style="font-size: 24px;"><strong>사랑의 연탄나눔</strong></p>
+            <hr>
+           <p class="introduction-margin">
+            사랑의 연탄나눔은 추운 겨울 연탄이 필요한 지역사회 소외계층을 대상으로 연탄을 나눠드리는 공익활동입니다. </p>
+                
+
         
-                dropdown.addEventListener('mouseenter', function() {
-                    dropdownContent.classList.add('dropdown-content-show');
-                });
-                dropdown.addEventListener('mouseleave', function() {
-                    dropdownContent.classList.remove('dropdown-content-show');
+        </div>
+    </div>
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+                const dropdowns = document.querySelectorAll('.dropdown');
+                dropdowns.forEach(dropdown => {
+                const dropdownContent = dropdown.querySelector('.dropdown-content');
+            
+                    dropdown.addEventListener('mouseenter', function() {
+                        dropdownContent.classList.add('dropdown-content-show');
+                    });
+                    dropdown.addEventListener('mouseleave', function() {
+                        dropdownContent.classList.remove('dropdown-content-show');
+                    });
                 });
             });
-        });
-</script>
+    </script>
 </body>
-
 </html>
