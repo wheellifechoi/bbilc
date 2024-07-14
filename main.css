@@ -10,27 +10,27 @@ a{
 nav{
     width:100%;
     background:transparent;
-    color:white;
+    color:black;
     position:fixed;
 
     
 }
- nav a{color:white;}
+ nav a{color:black;}
  .top-nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 45px;
     padding:0 45px;
-    border:1px solid white;
+    border:1px solid black;
  }
  .top-nav ul{
     list-style: none;
     display: flex;
  }
  .top-nav li{
-    border-left: 1px solid white;
-    border-right: 1px solid white;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
     height: 45px;
     display: flex;
     align-items: center;
@@ -48,7 +48,7 @@ nav{
     justify-content:space-between;
     padding: 10px 45px;
     height: 78px;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid black;
 }
 .bottom-nav ul{
     list-style: none;
@@ -56,10 +56,10 @@ nav{
     align-items:center;
 }
 .bottom-nav li{
-    border-right:1px dolid white
+    border-right:1px dolid black;
 }
 .bottom-nav ul li a{
-    color:white;
+    color:blue;
     padding:28px 20px;
 }
 .bottom-nav ul li a:hover{
